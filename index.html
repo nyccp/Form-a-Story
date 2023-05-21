@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Form a Story</title>
+  </head>
+  <body>
+    <section id="top">
+      <img src="https://content.codecademy.com/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+    </section>
+
+    <section id="main">
+      <h1>Complete the Form -<br> Complete the Story!</h1>
+      <hr>
+      <!--Add your form below:-->
+      <form action="story.html" method="GET">
+
+        <label for value="animal-1">Animal:</label>
+<input id="animal-1" type="text" name="animal-1">
+<br>
+        <label for value="animal-2">Animal:</label>
+<input id="animal-2" type="text" name="animal-2" required>
+<br>
+
+        <label for value="animal-3">Animal:</label>
+<input id="animal-3" type="text" name="animal-3" required>
+<br>
+        <label for value="adj-1">Adjective:</label>
+<input id="adj-1" type="text" name="adj-1" required>
+<br>
+
+        <label for value="verb-1">Verb:</label>
+<input id="verb-1" type="text" name="verb-1" required>
+<br>
+
+
+<label for value="num-1">Number:</label>
+<input type="number" id="num-1" name="num-1" required>
+<br>
+<span><input type="radio" id="yes" name="answer" value="yes" required>Yes or <input type="radio" id="no" name="answer" value="no" required>No:</span>
+<br>
+<label for value ="speed">Relative speed (ends in - er):</label>
+<select id="speed" name="speed" required>
+<option value="faster1">Faster1</option>
+<option value="faster2">Faster2</option>
+<option value="faster3">Faster3</option>
+
+
+
+</select>
+<br>
+
+<label for value="quote">Motivational</label>
+<input id="quote" name="quote" type="text" required list="quote-choices">
+<datalist id="quote-choices">
+  <option value="faster1"></option>
+<option value="faster2"></option>
+<option value="faster3"></option>
+<option value="winner gets ice cream!"></option>
+
+
+  </datalist>
+<br>
+
+<label for value="message">Meaningful Message:</label>
+<textarea id="message" name="messasge" required rows="8" cols="40">
+
+</textarea>
+
+<br>
+
+
+
+        <input type="submit" value="Form My Story!">
+
+
+
+        </form>
+
+
+    </section>
+  </body>
+</html>
